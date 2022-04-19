@@ -2,7 +2,6 @@ const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
 
 const track = $('.track');
-let carouselWidth = $('.carousel-container').width();
 
 track.each(number => {
     let index = 0;
@@ -75,14 +74,7 @@ track.each(number => {
     let m;
     let ost;
     let isNeedToHide;
-
     setMoveCoefficients();
-
-    console.log(`shifts: ${shifts}`)
-    console.log(`shiftCards: ${shiftCards}`)
-    console.log(`ost: ${ost}`)
-    console.log(`isNeedToHide: ${isNeedToHide}`)
-
 
     next[number].addEventListener('click', function (e) {
         index++;
